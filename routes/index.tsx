@@ -1,7 +1,9 @@
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 import "https://deno.land/std@0.145.0/dotenv/load.ts";
-import { connect } from "@planetscale/database";
+// import { connect } from "@planetscale/database";
+
+/* 
 
 const connection = await connect({
   url: Deno.env.get("DATABASE_URL"),
@@ -9,8 +11,10 @@ const connection = await connect({
 
 const results = await connection.execute("SELECT * FROM users");
 
+*/
+
 export default function Home() {
-  console.log(results);
+  // console.log(results);
 
   return (
     <>
