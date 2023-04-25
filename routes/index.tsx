@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import Counter from "../islands/Counter.tsx";
 import "https://deno.land/std@0.145.0/dotenv/load.ts";
-import { connect } from "npm:@planetscale/database@1.7.0";
+import { connect } from "@planetscale/database";
 
 const connection = await connect({
   url: Deno.env.get("DATABASE_URL"),
